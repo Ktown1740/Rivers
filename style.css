@@ -48,22 +48,6 @@
     font-family: 'Arial', sans-serif; /* customize font as needed */
   }
   
-  
-  .nav-links {
-    display: flex;
-    gap: 24px;
-  }
-  
-  .nav-links a {
-    color: #B59410; /* Gold */
-    font-weight: bold;
-    font-size: 16px;
-  }
-  
-  .donate-nav {
-    text-decoration: underline;
-  }
-  
   .hero {
     position: relative;
     height: 80vh;
@@ -82,6 +66,29 @@
     object-fit: cover;
     z-index: 0;
   }
+
+  .logo-center-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 5px;
+    background-color: #f9f5f0; /* Optional: adjust for contrast */
+  }
+  
+  .center-logo {
+    max-height: 100px;
+    width: auto;
+    margin-bottom: 20px;
+  }
+  
+  .company-name {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+    color: #d4af37;
+    margin: 0;
+  }
+  
 
   .mission-section {
     background-color: #f9f5f0;
@@ -102,13 +109,13 @@
   }
   
   .mission-section p {
-    font-size: 18px;
-    margin-bottom: 20px;
+    font-size: 22px;
+    margin-bottom: 25px;
     line-height: 1.6;
     color: #333;
   }
 
-  .about-section {
+  .blue-section {
     background-color: #4169e1;
     color: white;
     padding: 80px 40px;
@@ -138,7 +145,7 @@
   }
   
   .about-container p {
-    font-size: 18px;
+    font-size: 22px;
     margin-bottom: 20px;
     line-height: 1.6;
   }
@@ -150,7 +157,7 @@
   
   .purpose-container p,
   .purpose-container ul {
-    font-size: 18px;
+    font-size: 22px;
     line-height: 1.6;
   }
   
@@ -172,157 +179,108 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   }
   
-  /* Layout Section */
-  .layout-section {
-    background-color: white; /* or any background you prefer */
-    padding: 60px 20px;
-  }
-  
-  .layout-header2 {
-    color: #B59410;
-    font-size: 50px;
-    text-align: left;
-    margin: 0;
-  }
-  .layout-header3 {
-    color: #484646;
-    font-size: 30px;
-    text-align: left;
-    margin: 0;
-  }
-  .layout-paragraph {
-    color: #000000;
-    font-size: 18px;
-    text-align: left;
-    margin-top: 10px;
-  }
+/* Layout Section */
+.layout-section {
+  background-color: white;
+  padding: 60px 20px;
+  text-align: center; /* Center text inside the section */
+}
 
-  .intake-section {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 60px 80px;
-    gap: 40px;
-  }
+/* Headers & Paragraphs */
+.layout-header2 {
+  color: #4169e1;
+  font-size: 50px;
+  margin: 0 auto 20px;
+}
+
+.layout-header3 {
+  color: #484646;
+  font-size: 30px;
+  margin: 0 auto 15px;
+}
+
+.layout-paragraph {
+  color: #000000;
+  font-size: 22px;
+  margin: 10px auto 0;
+  max-width: 800px; /* Optional: limits line length for readability */
+}
+
+
+.intake-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 60px 80px;
+  gap: 40px;
+}
+
+.intake-content {
+  flex: 1;
+  text-align: left;
+}
+
+.intake-content h2 {
+  font-size: 50px;
+  color: #d4af37; /* gold */
+  margin-bottom: 20px;
+}
+
+.intake-content p {
+  font-size: 22px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.intake-content ul {
+  font-size: 22px;
+  padding-right: 20px;
+  margin-bottom: 16px;
+  list-style-position: inside;
+}
+
+.intake-content ul li {
+  margin-bottom: 8px;
+}
+
+.intake-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.intake-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
   
-  .intake-content {
-    flex: 1;
-    text-align: left;
-  }
-  
-  .intake-content h2 {
-    font-size: 50px;
-    color: #d4af37; /* gold */
-    margin-bottom: 20px;
-  }
-  
-  .intake-content p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 16px;
-  }
-  
-  .intake-image {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  .intake-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 12px;
-    object-fit: cover;
-  }
-  
-  .hygiene-section {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 60px 80px;
-    gap: 40px;
-  }
-  
-  .hygiene-image {
-    flex: 1;
-  }
-  
-  .hygiene-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 12px;
-    object-fit: cover;
-  }
-  
-  .hygiene-content {
-    flex: 1;
-    text-align: left;
-  }
-  
-  .hygiene-content h2 {
-    font-size: 50px;
-    color: #d4af37; /* gold */
-    margin-bottom: 20px;
-  }
-  
-  .hygiene-content p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 16px;
-  }
-  
-  .hygiene-content ul {
-    font-size: 18px;
-    margin-bottom: 16px;
-    padding-left: 20px;
-  }
-  
-  .hygiene-content ul li {
-    margin-bottom: 8px;
-  }
-  
-  .community-section {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 60px 80px;
-    gap: 40px;
-  }
-  
-  .community-content {
-    flex: 1;
-    text-align: left;
-  }
-  
-  .community-content h2 {
-    font-size: 50px;
-    color: #d4af37; /* gold */
-    margin-bottom: 20px;
-  }
-  
-  .community-content p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 16px;
-  }
-  
-  .community-content ul {
-    font-size: 18px;
-    padding-left: 20px;
-  }
-  
-  .community-content ul li {
-    margin-bottom: 8px;
-  }
-  
-  .community-image {
-    flex: 1;
-  }
-  
-  .community-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 12px;
-    object-fit: cover;
-  }
-  
+
+ 
+/* Layout Section- Blue*/
+.bluelayout-section {
+  background-color: #4169e1;
+  padding: 60px 20px;
+  text-align: center; /* Center text inside the section */
+}
+
+/* Headers & Paragraphs */
+.bluelayout-header2 {
+  color: white;
+  font-size: 50px;
+  margin: 0 auto 20px;
+}
+
+.bluelayout-header3 {
+  color: white;
+  font-size: 30px;
+  margin: 0 auto 15px;
+}
+
+.bluelayout-paragraph {
+  color: white;
+  font-size: 22px;
+  margin: 10px auto 0;
+  max-width: 800px; /* Optional: limits line length for readability */
+}

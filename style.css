@@ -43,7 +43,7 @@
   .logo-text {
     font-size: 50px;
     font-weight: bold;
-    color:#B59410; /* Gold */
+    color:black;
     ; /* change to match your theme */
     font-family: 'Arial', sans-serif; /* customize font as needed */
   }
@@ -85,7 +85,7 @@
   .company-name {
     font-family: 'Times New Roman', Times, serif;
     font-size: 60px;
-    color: #d4af37;
+    color: black;
     margin: 0;
   }
   
@@ -118,7 +118,7 @@
   .blue-section {
     background-color: #4169e1;
     color: white;
-    padding: 80px 40px;
+    padding: 60px 40px;
   }
   
   .about-flex {
@@ -261,7 +261,7 @@
 /* Layout Section- Blue*/
 .bluelayout-section {
   background-color: #4169e1;
-  padding: 60px 20px;
+  padding: 60px 20px 0px 20px;
   text-align: center; /* Center text inside the section */
 }
 
@@ -283,4 +283,26 @@
   font-size: 22px;
   margin: 10px auto 0;
   max-width: 800px; /* Optional: limits line length for readability */
+}
+.donate-section {
+  text-align: center;   /* centers the button horizontally */
+  padding: 100px 0;      /* extra top & bottom padding */
+  background-color: transparent; /* can change if you want a background */
+}
+
+.donate-button {
+  background-color: #d4af37; /* gold */
+  color: white; /* text color */
+  font-size: 50px;
+  font-family: Helvetica, sans-serif;
+  padding: 20px 60px; /* size of the button */
+  border-radius: 12px;
+  text-decoration: none; /* remove underline */
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.donate-button:hover {
+  background-color: #b8962f; /* darker gold hover */
 }
